@@ -1,0 +1,24 @@
+Analyzing mindwealth_ai...                                      
+
+   info - Unnecessary use of multiple underscores - lib\app.dart:57:45 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\app.dart:57:49 - unnecessary_underscores
+warning - The value of the field '_screens' isn't used - lib\app.dart:102:9 - unused_field
+  error - Arguments of a constant creation must be constant expressions - lib\features\budgets\budgets_screen.dart:34:40 - const_with_non_constant_argument
+  error - The getter 'budgets' isn't defined for the type 'AppStrings' - lib\features\budgets\budgets_screen.dart:34:51 - undefined_getter
+  error - The method 'setBudget' isn't defined for the type 'FirebaseService' - lib\features\budgets\budgets_screen.dart:338:34 - undefined_method
+  error - The named parameter 'tooltipRoundedRadius' isn't defined - lib\features\dashboard\dashboard_screen.dart:301:47 - undefined_named_parameter
+  error - The named parameter 'tooltipRoundedRadius' isn't defined - lib\features\dashboard\dashboard_screen.dart:528:49 - undefined_named_parameter
+  error - The getter 'current' isn't defined for the type 'GoalModel' - lib\features\goals\goals_screen.dart:227:58 - undefined_getter
+  error - The getter 'current' isn't defined for the type 'GoalModel' - lib\features\goals\goals_screen.dart:288:50 - undefined_getter
+  error - The named parameter 'current' isn't defined - lib\features\goals\goals_screen.dart:315:49 - undefined_named_parameter
+  error - The getter 'current' isn't defined for the type 'GoalModel' - lib\features\goals\goals_screen.dart:315:63 - undefined_getter
+  error - 2 positional arguments expected by 'updateGoal', but 1 found - lib\features\goals\goals_screen.dart:316:71 - not_enough_positional_arguments
+  error - The named parameter 'saved' is required, but there's no corresponding argument - lib\features\goals\goals_screen.dart:394:42 - missing_required_argument
+  error - The named parameter 'current' isn't defined - lib\features\goals\goals_screen.dart:398:31 - undefined_named_parameter
+  error - The named parameter 'amount' isn't defined - lib\features\transactions\add_transaction_sheet.dart:122:43 - undefined_named_parameter
+   info - Don't use 'BuildContext's across async gaps - lib\features\transactions\add_transaction_sheet.dart:198:52 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\transactions\add_transaction_sheet.dart:199:47 - use_build_context_synchronously
+   info - 'minSize' is deprecated and shouldn't be used. Use minimumSize instead. This feature was deprecated after v3.28.0-3.0.pre - lib\features\transactions\transactions_screen.dart:54:35 - deprecated_member_use
+   info - 'minSize' is deprecated and shouldn't be used. Use minimumSize instead. This feature was deprecated after v3.28.0-3.0.pre - lib\features\transactions\transactions_screen.dart:105:35 - deprecated_member_use
+
+20 issues found. (ran in 7.1s)

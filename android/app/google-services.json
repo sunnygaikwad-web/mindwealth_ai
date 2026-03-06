@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "914226222572",
+    "firebase_url": "https://personal-finance-managem-87c87-default-rtdb.firebaseio.com",
+    "project_id": "personal-finance-managem-87c87",
+    "storage_bucket": "personal-finance-managem-87c87.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914226222572:android:fa29e7bb5913cf0d3d9cc9",
+        "android_client_info": {
+          "package_name": "com.example.mindwealthai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2MG2pkEl7qUI3wO8NzchuriYl6i0eh2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914226222572:android:c4cf4077f5ecdc8f3d9cc9",
+        "android_client_info": {
+          "package_name": "com.finance.mindwealth_ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2MG2pkEl7qUI3wO8NzchuriYl6i0eh2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

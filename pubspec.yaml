@@ -1,0 +1,62 @@
+name: mindwealth_ai
+description: "MindWealth AI - AI-Powered Personal Finance Application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.8
+  google_fonts: any
+
+  # State Management
+  flutter_riverpod: any
+
+  # Firebase
+  firebase_core: any
+  firebase_auth: any
+  cloud_firestore: any
+
+  # Charts
+  fl_chart: any
+
+  # Date & Formatting
+  intl: any
+
+  # Export
+  syncfusion_flutter_pdf: any
+  syncfusion_flutter_xlsio: any
+
+  # File handling
+  path_provider: any
+  share_plus: any
+
+  # SQLite Local Database
+  sqflite: any
+  path: any
+
+  # Auto SMS Parsing for Transactions
+  flutter_sms_inbox: any
+  permission_handler: any
+
+  # Utils
+  uuid: any
+  collection: any
+
+  # Animations
+  flutter_animate: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: any
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
