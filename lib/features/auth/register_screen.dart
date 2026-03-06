@@ -236,11 +236,21 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen>
                                         ),
                                       ],
                                     ),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(22),
-                                      child: Image.asset(
-                                        'assets/images/app_logo.png',
-                                        fit: BoxFit.cover,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        gradient: const LinearGradient(
+                                          colors: [AppColors.primary, AppColors.accent],
+                                          begin: Alignment.topLeft,
+                                          end: Alignment.bottomRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(22),
+                                      ),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(22),
+                                        child: Image.asset(
+                                          'assets/images/app_logo.png',
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   );
