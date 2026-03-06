@@ -69,6 +69,14 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                 largeTitle: Text(
                   'Hi, ${profile?.name.split(' ').first ?? 'there'} 👋',
                 ),
+                trailing: CupertinoButton(
+                  padding: EdgeInsets.zero,
+                  child: const Icon(CupertinoIcons.add_circled_solid, size: 28),
+                  onPressed: () {
+                    HapticFeedback.mediumImpact();
+                    showAddTransactionSheet(context, ref, isDark);
+                  },
+                ),
               ),
 
               SliverToBoxAdapter(
@@ -1321,49 +1329,6 @@ class _DashboardScreenState extends ConsumerState<DashboardScreen> {
                 ),
               ),
             ],
-          ),
-          // ─── FAB: Add Transaction ───
-          Positioned(
-            right: 20,
-            bottom: 24,
-            child:
-                GestureDetector(
-                      onTap: () {
-                        HapticFeedback.mediumImpact();
-                        showAddTransactionSheet(context, ref, isDark);
-                      },
-                      child: Container(
-                        width: 60,
-                        height: 60,
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            colors: [AppColors.primary, AppColors.accent],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
-                          borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
-                            BoxShadow(
-                              color: AppColors.primary.withAlpha(120),
-                              blurRadius: 16,
-                              offset: const Offset(0, 6),
-                            ),
-                          ],
-                        ),
-                        child: const Icon(
-                          CupertinoIcons.add,
-                          color: CupertinoColors.white,
-                          size: 28,
-                        ),
-                      ),
-                    )
-                    .animate(onPlay: (c) => c.repeat(reverse: true))
-                    .scale(
-                      begin: const Offset(1.0, 1.0),
-                      end: const Offset(1.05, 1.05),
-                      duration: 1500.ms,
-                      curve: Curves.easeInOut,
-                    ),
           ),
         ],
       ),
