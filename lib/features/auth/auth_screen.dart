@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/cupertino.dart';
+import 'package:mindwealth_ai/features/auth/login_screen.dart';
 import 'package:mindwealth_ai/features/auth/register_screen.dart';
 
 class AuthScreen extends StatefulWidget {

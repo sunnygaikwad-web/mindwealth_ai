@@ -1,0 +1,7 @@
+Analyzing mindwealth_ai...                                      
+
+  error - Expected an identifier - lib\features\budgets\budgets_screen.dart:115:15 - missing_identifier
+  error - Expected to find ')' - lib\features\budgets\budgets_screen.dart:115:15 - expected_token
+  error - Expected to find ',' - lib\features\budgets\budgets_screen.dart:115:15 - expected_token
+
+3 issues found. (ran in 3.7s)

@@ -45,70 +45,76 @@ class BudgetsScreen extends ConsumerWidget {
                           style: TextStyle(
                             fontSize: 34,
                             fontWeight: FontWeight.bold,
-                            color: isDark ? AppColors.darkText : AppColors.lightText,
+                            color: isDark
+                                ? AppColors.darkText
+                                : AppColors.lightText,
                             letterSpacing: -1.0,
                           ),
                         ),
                         GestureDetector(
-                            onTap: () {
-                              HapticFeedback.mediumImpact();
-                              _showAddBudgetSheet(context, ref, isDark);
-                            },
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 16,
-                                vertical: 10,
-                              ),
-                              decoration: BoxDecoration(
-                                gradient: const LinearGradient(
-                                  colors: [AppColors.primary, AppColors.accent],
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
+                              onTap: () {
+                                HapticFeedback.mediumImpact();
+                                _showAddBudgetSheet(context, ref, isDark);
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                  vertical: 10,
                                 ),
-                                borderRadius: BorderRadius.circular(24),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: AppColors.primary.withAlpha(60),
-                                    blurRadius: 12,
-                                    offset: const Offset(0, 4),
+                                decoration: BoxDecoration(
+                                  gradient: const LinearGradient(
+                                    colors: [
+                                      AppColors.primary,
+                                      AppColors.accent,
+                                    ],
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
                                   ),
-                                ],
-                              ),
-                              child: const Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Icon(
-                                    CupertinoIcons.add,
-                                    color: CupertinoColors.white,
-                                    size: 18,
-                                  ),
-                                  SizedBox(width: 6),
-                                  Text(
-                                    'Add Budget',
-                                    style: TextStyle(
-                                      color: CupertinoColors.white,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w600,
+                                  borderRadius: BorderRadius.circular(24),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: AppColors.primary.withAlpha(60),
+                                      blurRadius: 12,
+                                      offset: const Offset(0, 4),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
+                                child: const Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(
+                                      CupertinoIcons.add,
+                                      color: CupertinoColors.white,
+                                      size: 18,
+                                    ),
+                                    SizedBox(width: 6),
+                                    Text(
+                                      'Add Budget',
+                                      style: TextStyle(
+                                        color: CupertinoColors.white,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
+                            )
+                            .animate(
+                              onPlay: (controller) =>
+                                  controller.repeat(reverse: true),
+                            )
+                            .scaleXY(begin: 1.0, end: 1.02, duration: 2.seconds)
+                            .animate()
+                            .fadeIn(delay: 200.ms, duration: 400.ms)
+                            .slideX(
+                              begin: 0.2,
+                              end: 0,
+                              duration: 400.ms,
+                              curve: Curves.easeOutBack,
                             ),
-                          )
-                          .animate(
-                            onPlay: (controller) =>
-                                controller.repeat(reverse: true),
-                          )
-                          .scaleXY(begin: 1.0, end: 1.02, duration: 2.seconds)
-                          .animate()
-                          .fadeIn(delay: 200.ms, duration: 400.ms)
-                          .slideX(
-                            begin: 0.2,
-                            end: 0,
-                            duration: 400.ms,
-                            curve: Curves.easeOutBack,
-                          ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
